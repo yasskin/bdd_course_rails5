@@ -14,7 +14,7 @@ Rails 5
 * Action Cable
 * RSpec
 * Capybara
-* 
+* Devise
 
 
 Guard
@@ -26,3 +26,5 @@ $ guard
 $ bundle binstubs guard
 $ guard init
 $ cucumber --init
+
+https://github.com/easante/blog-app5

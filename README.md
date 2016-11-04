@@ -16,3 +16,13 @@ Rails 5
 * Capybara
 * 
 
+
+Guard
+// to run
+$ cucumber --init
+$ guard
+
+// to set up
+$ bundle binstubs guard
+$ guard init
+$ cucumber --init

@@ -9,9 +9,7 @@ RSpec.describe "Comments", type: :request do
   end
   
   describe 'POST /articles/:id/comments' do
-    
     context 'with a non-signed in user' do
-    
       before do 
         post "/articles/#{@article.id}/comments", params: { comment: {body: "Awesome blog"}}
       end
@@ -22,11 +20,9 @@ RSpec.describe "Comments", type: :request do
         expect(response.status).to eq 302
         expect(flash[:alert]).to eq flash_message
       end
-      
     end
   
     context "with a logged in user" do
-      
       before do
         login_as(@fred)
         post "/articles/#{@article.id}/comments", params: { comment: {body: "Awesome blog"}}
@@ -38,9 +34,8 @@ RSpec.describe "Comments", type: :request do
         expect(response.status).to eq 302          
         expect(flash[:notice]).to eq flash_message
       end
-      
     end
-
   end
+  
 end
   

@@ -8,7 +8,7 @@ Comments Feature
 5. add nested route to route.rb file
 4. generate comment model
 5. build association
-6. request spec
-7. ensure a signed in user gets to comment
-8. a non signed in user gets redirected to sign in page
-9. 
+6. build a request spec
+  a. ensure a signed in user gets to comment
+  b. a non signed in user gets redirected to sign in page
+7.

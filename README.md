@@ -27,4 +27,13 @@ $ bundle binstubs guard
 $ guard init
 $ cucumber --init
 
+ActionCable
+
+for cloud9:
+app > config > development > development.rb
+  config.action_cable.disable_request_forgery_protection = true
+
+this line allows ActionCable to accept requests from all ports, not just :3000. Cloud 9 uses :8080
+
+
 https://github.com/easante/blog-app5
